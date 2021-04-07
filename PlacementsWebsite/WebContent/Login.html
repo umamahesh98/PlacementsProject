@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Home page</title>
+<link rel="stylesheet" href="RegistrationCss.css" />
+<script type="text/javascript" src="PasswordHide.js" > </script>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+<body>
+
+	<div class="maindivision">
+		<h1>Welcome To Login Page</h1>
+		<br>
+		<hr>
+		<br>
+		<form action="LoginServlet" method="get">
+			<table class="usertable">
+				<tr>
+					<td><label for="uname">USERNAME &nbsp;<i class='fas fa-user-alt'></i></label></td>
+					<td><input type="text" placeholder="userame" name="uname" id="uname" required></td>
+				</tr>
+				<br>
+				<br>
+				<br>
+				<tr>
+					<td><label for="pwd">PASSWORD</label></td>
+					<td><input type="password" name="pword"  id="pword"  placeholder="password" required></td>
+				</tr>
+				<tr>
+					<td>SHOW PASSWORD &nbsp;&nbsp;&nbsp;<input type="checkbox" onclick="myFunction()"></td>
+				</tr>
+			</table>
+			<br> <br> <br> <input type="submit" name="submit"
+				value="submit" /> <input type="reset" name="reset" value="reset" /><br>
+			<br> <br>
+		</form>
+		<h3>
+			Not Registered? <a href="Registration.html">Click here to Register</a>
+		</h3>
+	</div>
+	
+</body>
+</html>

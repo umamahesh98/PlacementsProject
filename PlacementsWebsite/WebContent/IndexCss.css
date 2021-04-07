@@ -1,0 +1,101 @@
+body {
+	margin: 0;
+}
+* {
+	box-sizing: border-box;
+}
+
+.navbar {
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #2F4F4F;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: #111;
+}
+ 
+	
+.row p {
+	display: block;
+	text-align: center;
+	padding: 5px 12px;
+}
+
+.row p:hover {
+	background-color: #2F4F4F;
+}
+
+marquee {
+	position: fixed;
+	margin-top: 45px;
+	background-color: #20B2AA;
+	height: 25px;
+	width: 100%;
+}
+
+.column.left {
+	width: 15%;
+	padding: 15px;
+	border: 1px solid #4CAF50;
+	margin-top: 70px;
+	background-color: silver;
+	height: 700px;
+	overflow: scroll;
+	flaot: left;
+	position: fixed;
+}
+
+.column.middle {
+	background-color: white;
+	margin-left: 202px;
+	width: 70%;
+	margin-top: 70px;
+	border: 3px solid #20B2AA;
+	padding: 10px;
+	overflow: scroll;
+}
+
+.column.right {
+	width: 15%;
+	padding: 15px;
+	border: 1px solid #4CAF50;
+	background-color: silver;
+	height: 602px;
+	margin-top: 70px;
+	margin-right: -30px; overflow : scroll;
+	float: right;
+	position: fixed;
+	overflow: scroll;
+}
+
+.column {
+	display: inline-block;
+}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}

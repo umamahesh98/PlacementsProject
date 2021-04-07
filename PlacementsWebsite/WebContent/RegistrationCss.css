@@ -1,0 +1,35 @@
+@CHARSET "ISO-8859-1";
+.maindivision
+{
+	text-align:center;
+	width:100%;	
+	background-color:lightblue;
+	width:50%;
+	margin-left:350px;
+
+}
+.headings
+{
+	padding-left:0px;
+}
+:required:focus
+{
+	border:1px solid red;
+	outline:none;
+}
+#birth
+{
+	padding-left:40px;
+}
+input:focus
+{
+	background-color:yellow;
+}
+textarea:focus
+{
+	background-color:yellow;
+}
+input
+{
+	border:2px solid pink;
+}
