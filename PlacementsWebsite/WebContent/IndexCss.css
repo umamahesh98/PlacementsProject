@@ -10,7 +10,11 @@ body {
 	position: fixed;
 	width: 100%;
 }
-
+ul  button
+{
+	background-color: #4CAF50;
+	 color: red;
+}
 ul {
 	list-style-type: none;
 	margin: 0;
@@ -65,7 +69,14 @@ marquee {
 	flaot: left;
 	position: fixed;
 }
-
+.column.middle img
+{
+	border:1px solid black;
+	margin:10px;
+		border-radius:8%;
+	
+	
+}
 .column.middle {
 	background-color: white;
 	margin-left: 202px;

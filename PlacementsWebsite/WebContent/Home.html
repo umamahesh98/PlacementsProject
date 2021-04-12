@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="HomeCss.css" />
+</head>
+<body>
+<div class="main main13">
+  <h2>Welcome To Programming Tutorials and MNC's Previous Questions</h2>
+  <br>
+  <pre style="color:black">C   JAVA   C++    MYSQL  TECHMAHINDRA  WIPRO  TCS  TECHOUTS  INFOSYS  SAFERTEK  CAPGEMINI   HCL   HEXAWARE  </pre>
+  
+</div>
+<div class="sidenav">
+  <button class="dropdown-btn"> Logins <i class="fa fa-caret-down"></i> </button>
+  <div class="dropdown-container">
+    <a href="Login.html">User Login</a>
+    <a href="#">Admin Login</a>
+    <a href="Registration.html">User Registration</a>
+  </div>
+</div>
+<div class="marq">
+<marquee>Hello All,  welcome to Techouts free tutorials</marquee></div>
+<h3><u>The Available tutorials are on :</u></h3>
+<div class="content">
+<img src="images/c.jpg" src="c programming" width="200px" height="140px"/>
+<img src="images/java.png" src="c programming" width="200px" height="140px"/>
+<img src="images/c++.png" src="c programming" width="200px" height="140px"/>
+<img src="images/mysql.png" src="c programming" width="200px" height="140px"/>
+<img src="images/python.jfif" src="c programming" width="200px" height="140px"/>
+<img src="images/accenture.png" src="c programming" width="200px" height="140px"/>
+<img src="images/capgemini.png" src="c programming" width="200px" height="140px"/>
+<img src="images/techouts.jfif" src="c programming" width="200px" height="140px"/>
+<img src="images/dxc.png" src="c programming" width="200px" height="140px"/>
+<img src="images/hcl.png" src="c programming" width="200px" height="140px"/>
+<img src="images/hexaware.png" src="c programming" width="200px" height="140px"/>
+<img src="images/tcs.png" src="c programming" width="200px" height="140px"/>
+<img src="images/wipro.png" src="c programming" width="200px" height="140px"/>
+<img src="images/infosys.png" src="c programming" width="200px" height="140px"/>
+<img src="images/techmahindra.png" src="c programming" width="200px" height="140px"/>
+
+
+</div>
+<script>
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+
+</body>
+</html> 

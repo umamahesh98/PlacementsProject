@@ -40,18 +40,17 @@ public class RegistrationServlet extends HttpServlet {
 			int i = pstmt.executeUpdate();
 			if (i > 0) {
 				out.print("You are successfully registered");
-				request.getRequestDispatcher("Login.html").include(request, response);
+				response.sendRedirect("Login.html");  
 			} else {
 				out.print("something went wrong");
-				out.print("kvhbkvjfbvkbkvndbndgmbjgn jg ");
 			}
 
 		} catch (SQLException e) {
 
-			System.out.print("error");
+		    out.print(" \t username already exixts , please choose another name");
+		    request.getRequestDispatcher("Registration.html").include(request, response);
 
 		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
 			System.out.println(e.getMessage());
 		}
 	}

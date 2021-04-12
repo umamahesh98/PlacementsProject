@@ -11,8 +11,9 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/HomeServlet")
 public class HomeServlet extends HttpServlet {
 	
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.getRequestDispatcher("Index.html").include(request, response);
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		//request.getRequestDispatcher("Index.html").include(request, response);
+		response.sendRedirect("Index.html");  
 	}
 
 	

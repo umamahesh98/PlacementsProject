@@ -3,32 +3,52 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Home page</title>
-<link rel="stylesheet" href="LoginCss.css" />
-
+<script type="text/javascript" src="PasswordHide.js"></script>
+<link rel="stylesheet" href="RegistrationCss.css" />
 </head>
-<body>
+<body style="background-image: url('images/ss.jpg');">
 	<div class="maindivision">
 		<h1>Welcome To Registration Page</h1>
 		<br>
 		<hr>
 		<br>
 		<form action="RegistrationServlet" method="get">
-		<table class="usertable">
-		<tr>
-			<td><label for="name">Name:</label> </td>
-			<td><input type="text" placeholder="First Name" name="fname" id="fname" required> </td>
-			<td><input type="text" placeholder="List Name" name="lname" id="lname" required><br></td></tr>
-			<tr><td> <label for="dob" >Birth Date:</label></td>
-			<td> <input type="date" name="dob" required/> </td> </tr>
-			<tr><td> <label for="uname">UserName:</label></td>
-			<td>  <input type="text" placeholder="userame" name="uname" id="uname" required></td></tr> <br> <br> <br>
-			<tr><td>  <label for="pwd">Password:</label></td>
-			 <td>  <input type="password" name="pwd" required ></td></tr></table>
-			  <br> <br> <br>
-			 <input type="submit" name="submit" value="submit" />
-			  <input type="reset" name="reset" value="reset" /><br> <br> <br>
+			<table class="usertable">
+				<tr>
+					<td><label for="name">Name:</label></td>
+					<td><input type="text" placeholder="First Name" name="fname"
+						id="fname" required></td>
+					<td><input type="text" placeholder="List Name" name="lname"
+						id="lname" required><br></td>
+				</tr>
+				<tr>
+					<td><label for="dob">Birth Date:</label></td>
+					<td><input type="date" name="dob" required /></td>
+				</tr>
+				<tr>
+					<td><label for="uname">UserName:</label></td>
+					<td><input type="text" placeholder="userame" name="uname"
+						id="uname" required></td>
+				</tr>
+				<br>
+				<br>
+				<br>
+				<tr>
+					<td><label for="pwd">Password:</label></td>
+					<td><input type="password" name="pwd"  id="pword" required></td>
+				</tr>
+
+				<tr>
+					<td>show password &nbsp;&nbsp;&nbsp;<input type="checkbox"  onclick="myFunction()"></td>
+				</tr>
+			</table>
+			<br> <br> <br> <input type="submit" name="submit"
+				value="submit" /> <input type="reset" name="reset" value="reset" /><br>
+			<br> <br>
 		</form>
-		<h3>Already Registered User? <a href="Login.html">Click here to login</a></h3>
+		<h3>
+			Already Registered User? <a href="Login.html">Click here to login</a>
+		</h3>
 	</div>
 
 </body>

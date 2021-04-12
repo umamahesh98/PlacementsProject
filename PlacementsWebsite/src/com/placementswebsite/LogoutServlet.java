@@ -10,29 +10,20 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-
 @WebServlet("/LogoutServlet")
 public class LogoutServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-   
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
 		HttpSession session = request.getSession();
-
-		if (session != null) {
 			session.invalidate();
-			 	out.print("you are successfully logged out!");
-			request.getRequestDispatcher("Logout.jsp").include(request, response);
-			//response.sendRedirect("logout.jsp");
-		} else {
-			out.print("Please login first");
-			request.getRequestDispatcher("Login.html").include(request, response);
-		}
+			out.print("you are successfully logged out!");
+			response.sendRedirect("Home.html");
 		
-	}
 
-	
-	
+	}
 
 }

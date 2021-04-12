@@ -1,0 +1,104 @@
+@CHARSET "ISO-8859-1";
+ * {
+    margin:0;
+    padding:0;  
+}
+.main {
+ 
+  font-size: 20px; 
+  background-color:skyblue;
+  color:white;
+  width:105%;
+  height:100px;
+  text-align:center;
+}
+.main h2
+{
+	color:black;
+}
+.sidenav {
+  height: 22%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  margin-top:140px;
+  box-sizing: border-box;
+  
+ 
+}
+.sidenav a  {
+	
+ box-sizing: border-box;
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  margin-left:-5px;
+  border-bottom: 1px solid white;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  color:white
+ 
+}
+.dropdown-btn{
+padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color:green;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color:blue;
+  padding-left: 8px;
+}
+
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+.content
+{
+	margin-top:70px;
+	margin-left:250px;
+}
+.content img
+{
+	border:1px solid black;
+	margin:5px;
+	border-radius:8%;
+}
+
+
+*
+{
+	box-sizing: border-box;
+}
+.marq
+{
+	margin:0px;
+	width:100%;
+	height:20px;
+	color:white;
+	background-color:black;
+}
+h3
+{
+	text-align:center;
+	margin-top:15px;
+	font-size:30px;
+}
